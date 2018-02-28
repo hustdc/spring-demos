@@ -1,13 +1,13 @@
 package caiweiwei.com.cn.spring_basic_demo_xml;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public abstract class AbstractTeacher {
-	private ArrayList<Clazz> clazzs;
-    public void setClazzs(ArrayList<Clazz> clazzs) {
+	private List<Clazz> clazzs;
+    public void setClazzs(List<Clazz> clazzs) {
     	this.clazzs = clazzs;
     }
-	public ArrayList<Clazz> getClazzs() {
+	public List<Clazz> getClazzs() {
 		return clazzs;
 	}
 	abstract void showScores();
