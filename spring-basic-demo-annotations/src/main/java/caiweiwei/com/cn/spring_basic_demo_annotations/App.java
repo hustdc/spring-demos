@@ -1,5 +1,8 @@
 package caiweiwei.com.cn.spring_basic_demo_annotations;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  *
@@ -9,5 +12,8 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean01.xml");
+        Deng deng = (Deng) context.getBean("deng");
+        System.out.println( deng.post() );
     }
 }
